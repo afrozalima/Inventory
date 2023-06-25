@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Vault</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <!--top nav-->
+
+    <div class="flex justify-between bg-body-color p-3 text-f-color font-bold ">
+       
+        
+            <div class="flex">
+                <img class="w-10 " src="brand-logo.png" alt="">
+               <p class="items-center p-2"> Afroza's Inventory</p> 
+            </div>
+    
+            <div>
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+            </div>
+        
+
+        <div class="flex gap-x-4 align-middle">
+            <span class="material-symbols-outlined">
+                notifications
+                </span>
+
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
+
+                    <span class="material-symbols-outlined">
+                        person_add
+                        </span>
+        </div>
+
+    </div>
+
+
+    <!--left nav-->
+
+   <div class="flex relative">
+    <div class="bg-body-color h-screen w-60 p-2 ">
+        <div class="m-2 p-2 flex">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                dashboard
+                </span>Dashboard</div>
+        </div>
+
+
+        <div class="m-2 p-2">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                inventory_2
+                </span>Products
+               </div>
+        </div>
+
+
+        <div class="m-2 p-2">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                inventory
+                </span>Inventory
+               </div>
+        </div>
+
+        <div class="m-2 p-2">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                production_quantity_limits
+                </span>Purchase Orders
+               </div>
+        </div>
+
+        <div class="m-2 p-2">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                problem
+                </span>Reports
+                </div>
+        </div>
+
+        <div class="m-2 p-2">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                order_play
+                </span>Sales Orders
+                </div>
+        </div>
+
+        <div class="m-2 p-2">
+            <div class="text-2xl text-f-color"><span class="material-symbols-outlined align-middle">
+                settings
+                </span>Setting
+               </div>
+        </div>
+    </div>
+
+    <!--card-->
+
+    <div class="bg-background-color h-screen w-screen">
+          <h1 class="text-top-nav ml-5 text-2xl p-2">INVENTOTY DASHBOARD</h1>
+
+          <div class="flex justify-evenly">
+            <!--card1-->
+             <div class="bg-card h-20  w-52 p-2 m-5 relative">
+                <div class="flex gap-x-10 ">
+                    <div class="text-2xl">PRODUCTS</div>
+                       <div><span class="material-symbols-outlined align-middle text-body-color">
+                        production_quantity_limits
+                        </span>
+                        </div>
+                  </div>
+
+                  <p class="text-xl">170</p>
+
+                  <div class="bg-body-color w-52 h-1 absolute bottom-0 left-0 ">
+
+                  </div>
+                </div>
+
+          
+            
+         
+ 
+
+    <!--card2-->
+
+    <div class="bg-card h-20  w-52 p-2 m-5 relative">
+        <div class="flex gap-x-10 ">
+            <div class="text-2xl">PURCHASE</div>
+               <div><span class="material-symbols-outlined align-middle text-text-purple-color">
+                inventory_2
+                </span></div>
+          </div>
+
+          <p class="text-xl">98</p>
+
+          <div class="bg-text-purple-color w-52 h-1 absolute bottom-0 left-0 ">
+
+          </div>
+        </div>
+
+
+        <!--card3-->
+
+        <div class="bg-card h-20  w-56 p-2 m-5 relative">
+            <div class="flex gap-x-10 ">
+                <div class="text-xl">SALES ORDERS</div>
+                   <div> <span class="material-symbols-outlined align-middle text-text-green-color">
+                    point_of_sale
+                    </span>
+                    </div>
+              </div>
+
+              <p class="text-xl">65</p>
+
+              <div class="bg-text-green-color w-56 h-1 absolute bottom-0 left-0 ">
+
+              </div>
+            </div>
+
+
+
+            <!--card4-->
+            <div class="bg-card h-20  w-52 p-2 m-5 relative">
+                <div class="flex gap-x-10 ">
+                    <div class="text-2xl">INVENTORY</div>
+                       <div><span class="material-symbols-outlined align-middle text-card1">
+                        notification_important
+                        </span></div>
+                  </div>
+
+                  <p class="text-xl">29</p>
+
+                  <div class="bg-card1 w-52 h-1 absolute bottom-0 left-0 ">
+
+                  </div>
+                </div>
+    <!--sesh-->
+  </div>
+
+   <!--card sesh-->
+
+       <!--chart suru-->
+    <div class="flex justify-evenly gap-x-16">
+        <div class="bg-f-color  max-h-96 p-5 w-auto m-5 ">
+            <div id="charts">
+                <div class="chart-cars">
+                     <h1 class="text-center text-2xl">Top 5 Products</h1>
+                     <div id="bar-chart">
+    
+                     </div>
+                </div>
+         </div>
+        </div>
+           
+    
+          
+         
+            <!--area chart-->
+
+            <div class="bg-f-color h-96 p-5  w-auto m-5 ">
+             <div class="chart-cars">
+                <h1 class="text-center text-2xl">Purchase and Sales Order</h1>
+                <div id="area-chart">
+
+                </div>
+           </div>
+           </div>
+
+
+         </div> 
+      
+    </div>
+          
+            
+        
+
+   <!--body sesh-->
+        </div>
+      </div>
+
+      <div class="absolute bottom-0 text-f-color m-5 text-xl">&COPY;bongodev</div>
+
+     </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+   <script src="index.js"></script>
+</body>
+</html>
